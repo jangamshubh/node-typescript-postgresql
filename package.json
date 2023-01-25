@@ -1,0 +1,15 @@
+{
+  "name": "backend-node-typescript-sequelize-postgres",
+  "version": "1.0.0",
+  "description": "Backend Setup using Node, Typescript, Sequelize, Postgres",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Shubh Jangam",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}
