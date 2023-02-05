@@ -1,6 +1,12 @@
 import * as dotenv from 'dotenv'
 dotenv.config();
 import { Sequelize } from "sequelize-typescript";
+import { Permission } from '../models/permissions.model';
+import { RolePermissions } from '../models/rolePermissions.model';
+import { Role } from '../models/roles.model';
+import { RoutePermission } from '../models/routePermissions.model';
+import { UserPermissions } from '../models/userPermissions.model';
+import { UserRoles } from '../models/userRoles.model';
 import { User } from '../models/users.model';
 
 const host = process.env.DB_HOST;
@@ -29,7 +35,7 @@ const connection = new Sequelize({
   username: username,
   password: password,
   database: database,
-  models: [User],
+  models: [User, Role, Permission, UserRoles, RolePermissions, UserPermissions, RoutePermission],
 });
 
 export default connection;
